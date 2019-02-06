@@ -12,7 +12,7 @@
     <meta name="description" content="Crysta - Startup Agency and SasS Business Template" />
 
     <!-- title  -->
-    <title>HeroGrowth - Agence de gestion de réseaux sociaux et webmarketing</title>
+    <title>Crysta - Startup Agency and SasS Business Template</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="img/logos/favicon.png" />
@@ -66,7 +66,7 @@
 
                             <ul class="navbar-nav ml-auto" id="nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="index.html">Accueil</a>
+                                    <a class="nav-link" href="index.html">Accueil</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="about.html">Qui sommes-nous</a>
@@ -75,12 +75,12 @@
                                     <a class="nav-link" href="services.html">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link active" href="contact.html">Contact</a>
                                 </li>
                             </ul>
 
                             <div class="margin-20px-left sm-display-none">
-                                <a class="butn white" href="audit.html">Audit Gratuit</a>
+                                <a class="butn auditBtn" href="audit.html">Audit Gratuit</a>
                             </div>
 
                         </div>
@@ -94,24 +94,45 @@
         </header>
         <!-- End Header -->
 
-        <!-- start contact form -->
+        <!-- start audit section -->
         <section>
-          <div class="container">
-              <div class="row">
-                  <div class="col-12 wow fadeIn">
-                    <div class="row">
-                      <div class="col-md-4">
-                          <input type="text" id="CA" name="name" placeholder="Chiffre d'affaire">
-                      </div>
-                      <div class="col-md-8" id="kebabs" style="font-size:5em;">
-                        0 🥙
-                      </div>
-                    </div>
+          <div class="container" id="audit">
+            <div class="section-heading">
+              <h3>Commandez votre Audit Gratuit</h3>
+              <p class="width-55 sm-width-75 xs-width-95">Business consulting excepteur sint occaecat cupidatat consulting non proident, sunt in culpa qui officia deserunt laborum Market.</p>
+            </div>
+            <div class="center-col">
+              <form method="post" action="bat/rd-mailform.php" class="mailform off2">
+                <input type="hidden" name="form-type" value="contact">
+                <div class="row">
+                  <div class="col-md-4">
+                    <input type="text" name="name" placeholder="Prénom:">
                   </div>
-              </div>
+                  <div class="col-md-4">
+                    <input type="text" name="name" placeholder="Nom:">
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" name="name" placeholder="Société:">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="phone" placeholder="Téléphone:">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="email" placeholder="Email:">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea name="message" rows="5" placeholder="Message:"></textarea>
+                  </div>
+                  <div class="col-md-5"></div>
+                  <div class="mfControls col-md-4">
+                    <button type="submit" class="butn">Envoyer</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-      </section>
-      <!-- end contact form -->
+        </section>
+        <!-- end audit section -->
 
         <!-- start footer section -->
         <footer class="bg-theme-light">
@@ -138,18 +159,16 @@
                         <div class="row">
                             <div class="col-md-6 no-padding-right xs-padding-15px-right">
                                 <ul class="footer-list xs-margin-5px-bottom">
-                                    <li><a href="audit.html">Votre audit gratuit</a></li>
+                                    <li><a href="javascript:void(0)" class="auditBtn">Votre audit gratuit</a></li>
                                     <li><a href="about.html">Qui sommes-nous</a></li>
                                     <li><a href="services.html">Services</a></li>
-                                    <li><a href="our-team.html">Notre team</a></li>
-                                    <li><a href="contact.html">Nous contacter</a></li>
+                                    <li><a href="contact.html">Notre team</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-6 no-padding-right xs-padding-15px-right">
                                 <ul class="footer-list">
+                                    <li><a href="contact.html">Nous contacter</a></li>
                                     <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="projects.html">Nos projets</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
                                     <li><a href="#">Conditions générales</a></li>
                                     <li><a href="#">Confidentialité</a></li>
                                 </ul>
@@ -186,7 +205,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 text-left xs-text-center xs-margin-5px-bottom">
-                            <p>&copy; Copyright HeroGrowth 2018. All Rights Reserved.</p>
+                            <p>&copy; Copyright HeroGrowth 2019. All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
@@ -205,14 +224,6 @@
 
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
-
-    <!-- Kebab Script -->
-    <script>
-      $("#CA").on('input', () => {
-        let numberOfKebabs = ($("#CA").val() / 138000).toFixed(1)
-        $('#kebabs').text(numberOfKebabs.toString() + ' 🥙')
-      })
-    </script>
 
     <!-- modernizr js -->
     <script src="js/modernizr.js"></script>
@@ -248,7 +259,7 @@
     <script src="js/tabs.min.js"></script>
 
     <!-- countdown js -->
-    <script src="js/countdown.js"></script>    
+    <script src="js/countdown.js"></script>
 
     <!-- jquery.magnific-popup js -->
     <script src="js/jquery.magnific-popup.min.js"></script>
@@ -261,6 +272,7 @@
 
     <!-- map js -->
     <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJScy7qJ156DWM8kJVG-ZrK0R7Kize2Jg&amp;callback=initMap" async defer></script>
 
     <!-- custom scripts -->
     <script src="js/main.js"></script>
