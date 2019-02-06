@@ -80,7 +80,7 @@
                             </ul>
 
                             <div class="margin-20px-left sm-display-none">
-                                <a class="butn" href="audit.html">Audit Gratuit</a>
+                                <a class="butn auditBtn" href="javascript:void(0)">Audit Gratuit</a>
                             </div>
 
                         </div>
@@ -211,6 +211,51 @@
         </footer>
         <!-- end footer section -->
 
+        <!-- Audit Modal -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="auditModal">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Demandez votre audit gratuit</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" action="bat/rd-mailform.php" class="mailform off2">
+                            <input type="hidden" name="form-type" value="contact">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" name="name" placeholder="Nom:">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" name="name" placeholder="Société:">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" name="phone" placeholder="Téléphone:">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" name="email" placeholder="Email:">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"></div>
+                                <div class="mfControls col-md-6">
+                                    <button type="submit" class="butn">Envoyer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- end main-wrapper section -->
 
@@ -280,6 +325,9 @@
     <script src="js/mailform/jquery.rd-mailform.min.c.js"></script>
 
     <!-- all js include end -->
+
+    <!-- Audit modal handle -->
+    <script src="js/auditmodal.js"></script>
 
 </body>
 
