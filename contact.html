@@ -44,99 +44,55 @@
     <!-- start main-wrapper section -->
     <div class="main-wrapper">
 
-        <!-- start header section -->
-        <header>
+        <!-- Start Header -->
+        <header class="header" data-scroll-index="0">
 
-            <div class="navbar-default">
+            <div class="container">
 
-                <!-- start top search -->
-                <div class="top-search bg-theme">
-                    <div class="container">
-                        <form class="search-form" action="search.html" method="GET" accept-charset="utf-8">
-                            <div class="input-group">
-                                <span class="input-group-addon cursor-pointer">
-                                    <button class="search-form_submit fas fa-search font-size18 text-white" type="submit"></button>
-                                </span>
-                                <input type="text" class="search-form_input form-control margin-10px-lr" name="s" autocomplete="off" placeholder="Type & hit enter...">
-                                <span class="input-group-addon close-search"><i class="fas fa-times font-size18 margin-5px-top"></i></span>
+                <div class="menu_area alt-font">
+
+                    <!-- Start Navbar -->
+                    <nav class="navbar navbar-expand-lg no-padding">
+
+                        <div class="container sm-position-relative">
+
+                            <div class="navbar-header navbar-header-custom">
+                                <!-- start logo -->
+                                <a href="index.html" class="navbar-brand white-logo"><img id="logo" src="img/logos/logo-color-01.png" alt="logo"></a>
+                                <!-- end logo -->
                             </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end top search -->
 
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-lg-12">
-                            <div class="menu_area alt-font">
-                                <nav class="navbar navbar-expand-lg navbar-light no-padding">
+                            <div class="navbar-toggler"></div>
 
-                                    <div class="navbar-header navbar-header-custom">
-                                        <!-- start logo -->
-                                        <a href="demo-1.html" class="navbar-brand"><img id="logo" src="img/logos/logo.png" alt="logo"></a>
-                                        <!-- end logo -->
-                                    </div>
+                            <ul class="navbar-nav ml-auto" id="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Qui sommes-nous</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
 
-                                    <div class="navbar-toggler"></div>
-
-                                    <!-- start menu Area -->
-                                    <ul class="navbar-nav ml-auto" id="nav" style="display: none;">
-                                        <li><a href="javascript:void(0)">Home</a>
-                                            <ul>
-                                                <li><a href="demo-1.html">Demo 01</a></li>
-                                                <li><a href="demo-2.html">Demo 02</a></li>
-                                                <li><a href="demo-3.html">Demo 03 - Onepage</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="javascript:void(0)">Pages</a>
-                                            <ul>
-                                                <li><a href="our-team.html">Our Team</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                                <li><a href="projects.html">Projects</a></li>
-                                                <li><a href="projects-style2.html">Projects Style2</a></li>
-                                                <li><a href="single-project.html">Single Project</a></li>
-                                                <li><a href="javascript:void(0)">Others</a>
-                                                    <ul>
-                                                        <li><a href="pricing.html">Pricing</a></li>
-                                                        <li><a href="tables.html">Tables</a></li>
-                                                        <li><a href="tabs-and-accordions.html">Tabs and Accordions</a></li>
-                                                        <li><a href="404-page.html">Error 404</a></li>
-                                                        <li><a href="coming-soon.html">Comingsoon</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="javascript:void(0)">Blog</a>
-                                            <ul>
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog-default.html">Blog Default</a></li>
-                                                <li><a href="blog-post.html">Blog Post</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                    <!-- end menu Area -->
-
-                                    <!-- start attribute navigation -->
-                                    <div class="attr-nav sm-no-margin sm-margin-65px-right">
-                                        <ul>
-                                            <li class="search"><a href="javascript:void(0)"><i class="fas fa-search"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- end attribute navigation -->
-
-                                </nav>
+                            <div class="margin-20px-left sm-display-none">
+                                <a class="butn" href="audit.html">Audit Gratuit</a>
                             </div>
+
                         </div>
-                    </div>
+
+                    </nav>
+                    <!-- End Navbar  -->
                 </div>
+
             </div>
 
         </header>
-        <!-- end header section -->
+        <!-- End Header -->
 
         <!-- start contact form -->
         <section>
@@ -145,7 +101,7 @@
                     <div class="col-12 wow fadeIn">
 
                         <div class="section-heading">
-                            <h3>Get in Touch</h3>
+                            <h3>Nous contacter</h3>
                             <p class="width-55 sm-width-75 xs-width-95">We are available 24/7 by e-mail and phone. You can also ask a question about our services through our contact form that we regularly provide.</p>
                         </div>
 
@@ -153,10 +109,10 @@
                             <input type="hidden" name="form-type" value="contact">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <input type="text" name="name" placeholder="Your Name:" data-constraints="@LettersOnly @NotEmpty">
+                                    <input type="text" name="name" placeholder="Votre nom:" data-constraints="@LettersOnly @NotEmpty">
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="text" name="phone" placeholder="Telephone:" data-constraints="@Phone">
+                                    <input type="text" name="phone" placeholder="Téléphone:" data-constraints="@Phone">
                                 </div>
                                 <div class="col-md-4">
                                     <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
@@ -165,7 +121,7 @@
                                     <textarea name="message" rows="5" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
                                 </div>
                                 <div class="mfControls col-md-12">
-                                    <button type="submit" class="butn">Sumbit comment</button>
+                                    <button type="submit" class="butn">Envoyer</button>
                                 </div>
                             </div>
                         </form>
