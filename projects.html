@@ -41,119 +41,55 @@
     <!-- start main-wrapper section -->
     <div class="main-wrapper">
 
-        <!-- start header section -->
-        <header>
+        <!-- Start Header -->
+        <header class="header" data-scroll-index="0">
 
-            <div class="navbar-default">
+            <div class="container">
 
-                <!-- start top search -->
-                <div class="top-search bg-theme">
-                    <div class="container">
-                        <form class="search-form" action="search.html" method="GET" accept-charset="utf-8">
-                            <div class="input-group">
-                                <span class="input-group-addon cursor-pointer">
-                                    <button class="search-form_submit fas fa-search font-size18 text-white" type="submit"></button>
-                                </span>
-                                <input type="text" class="search-form_input form-control margin-10px-lr" name="s" autocomplete="off" placeholder="Type & hit enter...">
-                                <span class="input-group-addon close-search"><i class="fas fa-times font-size18 margin-5px-top"></i></span>
+                <div class="menu_area alt-font">
+
+                    <!-- Start Navbar -->
+                    <nav class="navbar navbar-expand-lg no-padding">
+
+                        <div class="container sm-position-relative">
+
+                            <div class="navbar-header navbar-header-custom">
+                                <!-- start logo -->
+                                <a href="index.html" class="navbar-brand white-logo"><img id="logo" src="img/logos/logo-color-01.png" alt="logo"></a>
+                                <!-- end logo -->
                             </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end top search -->
 
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-lg-12">
-                            <div class="menu_area alt-font">
-                                <nav class="navbar navbar-expand-lg navbar-light no-padding">
+                            <div class="navbar-toggler"></div>
 
-                                    <div class="navbar-header navbar-header-custom">
-                                        <!-- start logo -->
-                                        <a href="demo-1.html" class="navbar-brand"><img id="logo" src="img/logos/logo.png" alt="logo"></a>
-                                        <!-- end logo -->
-                                    </div>
+                            <ul class="navbar-nav ml-auto" id="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Qui sommes-nous</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
 
-                                    <div class="navbar-toggler"></div>
-
-                                    <!-- start menu Area -->
-                                    <ul class="navbar-nav ml-auto" id="nav" style="display: none;">
-                                        <li><a href="javascript:void(0)">Home</a>
-                                            <ul>
-                                                <li><a href="demo-1.html">Demo 01</a></li>
-                                                <li><a href="demo-2.html">Demo 02</a></li>
-                                                <li><a href="demo-3.html">Demo 03 - Onepage</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="javascript:void(0)">Pages</a>
-                                            <ul>
-                                                <li><a href="our-team.html">Our Team</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                                <li><a href="projects.html">Projects</a></li>
-                                                <li><a href="projects-style2.html">Projects Style2</a></li>
-                                                <li><a href="single-project.html">Single Project</a></li>
-                                                <li><a href="javascript:void(0)">Others</a>
-                                                    <ul>
-                                                        <li><a href="pricing.html">Pricing</a></li>
-                                                        <li><a href="tables.html">Tables</a></li>
-                                                        <li><a href="tabs-and-accordions.html">Tabs and Accordions</a></li>
-                                                        <li><a href="404-page.html">Error 404</a></li>
-                                                        <li><a href="coming-soon.html">Comingsoon</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="javascript:void(0)">Blog</a>
-                                            <ul>
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog-default.html">Blog Default</a></li>
-                                                <li><a href="blog-post.html">Blog Post</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                    <!-- end menu Area -->
-
-                                    <!-- start attribute navigation -->
-                                    <div class="attr-nav sm-no-margin sm-margin-65px-right">
-                                        <ul>
-                                            <li class="search"><a href="javascript:void(0)"><i class="fas fa-search"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- end attribute navigation -->
-
-                                </nav>
+                            <div class="margin-20px-left sm-display-none">
+                                <a class="butn auditBtn" href="audit.html">Audit Gratuit</a>
                             </div>
+
                         </div>
-                    </div>
+
+                    </nav>
+                    <!-- End Navbar  -->
                 </div>
+
             </div>
 
         </header>
-        <!-- end header section -->
-
-        <!-- start page title section -->
-        <section class="page-title-section bg-img cover-background theme-overlay" data-overlay-dark="7" data-background="img/banner/bg9.jpg">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>Our Projects</h1>
-                    </div>
-                    <div class="col-md-12">
-                        <ul>
-                            <li><a href="demo-1.html">Home</a></li>
-                            <li><a href="javascript:void(0)">Our Projects</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- end page title section -->
+        <!-- End Header -->
 
         <!-- start portfolio section -->
         <section class="portfolio">
@@ -265,52 +201,79 @@
         <!-- end portfolio section -->
 
         <!-- start footer section -->
-        <footer>
+        <footer class="bg-theme-light">
             <div class="container">
-                <div class="row margin-30px-bottom padding-30px-bottom border-bottom border-color-light-white">
-
-                    <div class="col-lg-4 col-md-12 sm-margin-30px-bottom text-center">
-
-                        <h3 class="footer-title-style text-white">Phone</h3>
-                        <p class="font-size16 sm-font-size14">(+44) 123 456 789</p>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 sm-margin-30px-bottom text-center">
-                        <h3 class="footer-title-style text-white">Email</h3>
-                        <p class="font-size16 sm-font-size14">addyour@emailhere</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 text-center">
-                        <h3 class="footer-title-style text-white">Location</h3>
-                        <p class="font-size16 sm-font-size14">74 Guild Street 542B, Town MT.</p>
-                    </div>
-
-                </div>
-
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <ul class="social-icon-style2 no-margin">
+
+                    <div class="col-lg-4 col-md-6 sm-margin-30px-bottom">
+
+                        <h1>HeroGrowth</h1>
+                        <p class="margin-20px-top text-extra-dark-gray">Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequ magni dolores eos qui ratione voluptatem.</p>
+                        <div class="margin-25px-top xs-margin-20px-top footer-social-icons">
+                            <ul>
+                                <li><a href="https://www.facebook.com/Hero-Growth-2608483292711374" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-twitter" target="_blank"></i></a></li>
+                                <li><a href="https://www.instagram.com/hero.growth/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 sm-margin-30px-bottom">
+                        <h3 class="footer-title-style2 text-theme-color">Navigation rapide</h3>
+                        <div class="row">
+                            <div class="col-md-6 no-padding-right xs-padding-15px-right">
+                                <ul class="footer-list xs-margin-5px-bottom">
+                                    <li><a href="audit.html">Votre audit gratuit</a></li>
+                                    <li><a href="about.html">Qui sommes-nous</a></li>
+                                    <li><a href="services.html">Nos services</a></li>
+                                    <li><a href="our-team.html">Notre team</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 no-padding-right xs-padding-15px-right">
+                                <ul class="footer-list">
+                                    <li><a href="contact.html">Nous contacter</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="#">Conditions générales</a></li>
+                                    <li><a href="#">Confidentialité</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 offset-lg-1">
+                        <h3 class="footer-title-style2 text-theme-color">Coordonnées</h3>
+                        <ul class="footer-list">
                             <li>
-                                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                                <span class="d-inline-block vertical-align-top font-size18"><i class="fas fa-mobile-alt text-theme-color"></i></span>
+                                <span class="d-inline-block width-85 vertical-align-top padding-10px-left">(+44) 123 456 789</span>
                             </li>
                             <li>
-                                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                                <span class="d-inline-block vertical-align-top font-size18"><i class="far fa-envelope text-theme-color"></i></span>
+                                <span class="d-inline-block width-85 vertical-align-top padding-10px-left">contact@herogrowth.co</span>
                             </li>
                             <li>
-                                <a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
+                                <span class="d-inline-block vertical-align-top font-size18"><i class="fab fa-linkedin text-theme-color"></i></span>
+                                <span class="d-inline-block width-85 vertical-align-top padding-10px-left">herogrowth</span>
                             </li>
                             <li>
-                                <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                                <span class="d-inline-block vertical-align-top font-size18"><i class="fas fa-globe text-theme-color"></i></span>
+                                <span class="d-inline-block width-85 vertical-align-top padding-10px-left">herogrowth.co</span>
                             </li>
                         </ul>
                     </div>
+
                 </div>
 
             </div>
-            <div class="footer-bar">
+            <div class="footer-bar xs-font-size13">
                 <div class="container">
-                    <p class="xs-font-size13">&copy; 2018 Crysta is Powered by Chitrakoot Web</p>
+                    <div class="row">
+                        <div class="col-md-6 text-left xs-text-center xs-margin-5px-bottom">
+                            <p>&copy; Copyright HeroGrowth 2019. All Rights Reserved.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
