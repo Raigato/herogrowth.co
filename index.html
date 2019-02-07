@@ -55,7 +55,7 @@
 
                             <div class="navbar-header navbar-header-custom">
                                 <!-- start logo -->
-                                <a href="#" class="navbar-brand white-logo"><img id="logo" src="img/logos/logo-white.png" alt="logo"></a>
+                                <a href="javascript:void(0)" class="scrollTop navbar-brand white-logo"><img id="logo" src="img/logos/logo-white.png" alt="logo"></a>
                                 <!-- end logo -->
                             </div>
 
@@ -494,6 +494,12 @@
             $('html,body').animate({
                 scrollTop: $("#audit").offset().top - 100
             }, 'slow')
+        })
+
+        $('.scrollTop').click(() => {
+            $('html,body').animate({
+                scrollTop: 0
+            }, "slow")
         })
     </script>
 
