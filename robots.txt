@@ -1,0 +1,6 @@
+User-agent: *
+
+Noindex: /
+Disallow: /
+
+Sitemap: https://www.herogrowth.co/sitemap.xml
