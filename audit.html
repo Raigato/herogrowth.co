@@ -122,17 +122,17 @@
               <p class="width-55 sm-width-75 xs-width-95">Remplissez le formulaire ci-dessous pour recevoir un audit gratuit de votre stratégie digitale sous trois jours ouvrés.</p>
             </div>
             <div class="center-col">
-              <form method="post" action="bat/rd-mailform.php" class="mailform off2">
-                <input type="hidden" name="form-type" value="contact">
+              <form method="post" action="#" class="mailform off2" id="auditForm">
+                <input type="hidden" name="form-type" value="audit">
                 <div class="row">
                   <div class="col-md-4">
-                    <input type="text" name="name" placeholder="Prénom:">
+                    <input type="text" name="firstname" placeholder="Prénom:">
                   </div>
                   <div class="col-md-4">
-                    <input type="text" name="name" placeholder="Nom:">
+                    <input type="text" name="lastname" placeholder="Nom:">
                   </div>
                   <div class="col-md-4">
-                    <input type="text" name="name" placeholder="Société:">
+                    <input type="text" name="company" placeholder="Société:">
                   </div>
                   <div class="col-md-6">
                     <input type="text" name="phone" placeholder="Téléphone:">
@@ -145,7 +145,7 @@
                   </div>
                   <div class="col-md-5"></div>
                   <div class="mfControls col-md-4">
-                    <button type="submit" class="butn">Envoyer</button>
+                    <button type="submit" class="butn" id=form-submit>Commander</button>
                   </div>
                 </div>
               </form>
@@ -281,16 +281,8 @@
     <!-- wow js -->
     <script src="js/wow.js"></script>
 
-    <!-- map js -->
-    <script src="js/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJScy7qJ156DWM8kJVG-ZrK0R7Kize2Jg&amp;callback=initMap" async defer></script>
-
     <!-- custom scripts -->
     <script src="js/main.js"></script>
-
-    <!-- contact form scripts -->
-    <script src="js/mailform/jquery.form.min.js"></script>
-    <script src="js/mailform/jquery.rd-mailform.min.c.js"></script>
 
     <!-- all js include end -->
 
@@ -300,6 +292,20 @@
                 scrollTop: $("#audit").offset().top - 80
             }, "slow")
         })
+
+        // POST form data to zapier on submit
+        $('#auditForm').submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                url:'https://hooks.zapier.com/hooks/catch/4501492/p3h27o/',
+                type:'post',
+                data:$('#auditForm').serialize(),
+                success:function(){
+                // Redirect to another success page
+                window.location = "audit.html";
+                }
+            });
+        });
     </script>
 
 </body>
