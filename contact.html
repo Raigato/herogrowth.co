@@ -116,36 +116,55 @@
 
         <!-- start contact form -->
         <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-
-                        <div class="section-heading">
-                            <h3>Nous contacter</h3>
-                            <p class="width-55 sm-width-75 xs-width-95">Vous avez une question ? Vous souhaitez nous rencontrer ? Rien de plus simple ! Vous pouvez nous envoyer un message avec le formulaire ci-dessous !</p>
+            <div class="container" id="contact">
+                <div class="section-heading">
+                <h3>Nous contacter</h3>
+                <p class="width-55 sm-width-75 xs-width-95">Vous avez une question ? Vous souhaitez nous rencontrer ? Rien de plus simple ! Vous pouvez nous envoyer un message avec le formulaire ci-dessous !</p>
+                </div>
+                <div class="center-col">
+                <form method="post" action="#" class="mailform off2" id="contactForm">
+                    <input type="hidden" name="form-type" value="contact">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" name="firstname" placeholder="Votre nom:" id="name-input">
                         </div>
-
-                        <form method="POST" action="https://hooks.zapier.com/hooks/catch/4501492/p34aq4/" class="mailform off2" id="contactForm">
-                            <input type="hidden" name="form-type" value="contact">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <input type="text" name="name" placeholder="Votre nom:">
-                                </div>
-                                <div class="col-md-4">
-                                    <input type="text" name="phone" placeholder="Téléphone:">
-                                </div>
-                                <div class="col-md-4">
-                                    <input type="text" name="email" placeholder="Email:">
-                                </div>
-                                <div class="col-md-12">
-                                    <textarea name="message" rows="5" placeholder="Message:"></textarea>
-                                </div>
-                                <div class="mfControls col-md-12">
-                                    <button type="submit" class="butn" id=form-submit>Envoyer</button>
-                                </div>
+                        <div class="col-md-4">
+                            <input type="text" name="telephone" placeholder="Téléphone:" id="phone-input">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" name="email" placeholder="Email:" id="email-input">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea name="message" rows="5" placeholder="Message:" id="message-input"></textarea>
+                        </div>
+                    <div class="mfControls col-md-12 text-center">
+                        <button type="submit" class="butn" id=form-submit>Envoyer</button>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="container" id="contactSuccess">
+                <div class="section-heading">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-box margin-25px-bottom sm-margin-15px-bottom">
+                                <i class="far fa-share-square text-theme-color"></i>
                             </div>
-                        </form>
-
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Votre message a bien été envoyée !</h3>
+                            <p>Nous reviendrons rapidement vers vous par e-mail.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-center">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="index" class="butn">Retour à l'Accueil</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -240,6 +259,9 @@
     <!-- modernizr js -->
     <script src="js/modernizr.js"></script>
 
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+
     <!-- bootstrap -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -285,20 +307,10 @@
     <!-- all js include end -->
     
     <!-- Contact form logic -->
+    <script src="js/contact-form.js"></script>
+
     <script>
-        // POST form data to zapier on submit
-        $('#contactForm').submit(function(e){
-            e.preventDefault();
-            $.ajax({
-                url:'https://hooks.zapier.com/hooks/catch/4501492/p34aq4/',
-                type:'post',
-                data:$('#contactForm').serialize(),
-                success:function(){
-                // Redirect to another success page
-                window.location = "contact";
-                }
-            });
-        });
+        const url = 'https://hooks.zapier.com/hooks/catch/4501492/p34aq4/'
     </script>
 
 </body>
