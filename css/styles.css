@@ -2374,3 +2374,17 @@ h3.footer-title-style2:after {
       font-size: 13px; } }
 
 /*# sourceMappingURL=styles.css.map */
+
+.popup {
+  background-color: #4BB543;
+  padding: 10px;
+  color: white;
+  text-shadow: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+  background-color: #cc0000;
+}

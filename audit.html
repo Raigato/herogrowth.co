@@ -126,23 +126,59 @@
                 <input type="hidden" name="form-type" value="audit">
                 <div class="row">
                   <div class="col-md-4">
-                    <input type="text" name="firstname" placeholder="Prénom:">
+                    <div class="popup error" id="firstnameError">
+                        Ne peut être vide
+                    </div>
                   </div>
                   <div class="col-md-4">
-                    <input type="text" name="lastname" placeholder="Nom:">
+                    <div class="popup error" id="lastnameError">
+                        Ne peut être vide
+                    </div>
                   </div>
                   <div class="col-md-4">
-                    <input type="text" name="company" placeholder="Société:">
+                    <div class="popup error" id="companyError">
+                        Ne peut être vide
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" name="firstname" placeholder="Prénom:" id="firstname-input">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" name="lastname" placeholder="Nom:" id="lastname-input">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" name="company" placeholder="Société:" id="company-input">
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="popup error" id="phoneError">
+                        Numero incorrect
+                    </div>
                   </div>
                   <div class="col-md-6">
-                    <input type="text" name="phone" placeholder="Téléphone:">
+                    <div class="popup error" id="emailError">
+                        Adresse e-mail incorrect
+                    </div>
                   </div>
-                  <div class="col-md-6">
-                    <input type="text" name="email" placeholder="Email:">
-                  </div>
-                  <div class="col-md-12">
-                    <textarea name="message" rows="5" placeholder="Message:"></textarea>
-                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="phone" placeholder="Téléphone:" id="phone-input">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="email" placeholder="Email:" id="email-input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="popup error" id="messageError">
+                            Ne peut être vide
+                        </div>
+                        <textarea name="message" rows="5" placeholder="Message:" id="message-input"></textarea>
+                    </div>
                   <div class="col-md-5"></div>
                   <div class="mfControls col-md-4">
                     <button type="submit" class="butn" id=form-submit>Commander</button>
@@ -286,26 +322,13 @@
 
     <!-- all js include end -->
 
+    <script src="js/audit-form.js"></script>
     <script>
         $('.scrollTop').click(() => {
             $('html,body').animate({
                 scrollTop: $("#audit").offset().top - 80
             }, "slow")
         })
-
-        // POST form data to zapier on submit
-        $('#auditForm').submit(function(e){
-            e.preventDefault();
-            $.ajax({
-                url:'https://hooks.zapier.com/hooks/catch/4501492/p3h27o/',
-                type:'post',
-                data:$('#auditForm').serialize(),
-                success:function(){
-                // Redirect to another success page
-                window.location = "audit";
-                }
-            });
-        });
     </script>
 
 </body>
