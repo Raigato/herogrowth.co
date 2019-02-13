@@ -1,3 +1,5 @@
+$('#auditSuccess').hide()
+
 $('#firstname-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'})
 $('#lastname-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'})
 $('#company-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'})
@@ -204,8 +206,9 @@ $('#auditForm').submit(function(e){
       type:'post',
       data:$('#auditForm').serialize(),
       success:function(){
-      // Redirect to another success page
-      window.location = "audit";
+      // Transform to success
+        $('#audit').hide()
+        $('#auditSuccess').show()
       }
     })
   }

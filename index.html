@@ -348,47 +348,61 @@
 
         <!-- start audit section -->
         <section class="bg-theme-light">
-                <div class="container" id="audit">
-                  <div class="section-heading">
-                    <h3>Commandez votre Audit Gratuit</h3>
-                    <p class="width-55 sm-width-75 xs-width-95">Remplissez le formulaire ci-dessous pour recevoir un audit gratuit de votre stratégie digitale sous trois jours ouvrés.</p>
-                  </div>
-                  <div class="center-col">
-                    <form method="post" action="#" class="mailform off2" id="auditForm">
-                      <input type="hidden" name="form-type" value="audit">
-                      <div class="row">
-                          <div class="col-md-4">
-                              <input type="text" name="firstname" placeholder="Prénom:" id="firstname-input">
-                          </div>
-                          <div class="col-md-4">
-                              <input type="text" name="lastname" placeholder="Nom:" id="lastname-input">
-                          </div>
-                          <div class="col-md-4">
-                              <input type="text" name="company" placeholder="Société:" id="company-input">
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-6">
-                              <input type="text" name="phone" placeholder="Téléphone:" id="phone-input">
-                          </div>
-                          <div class="col-md-6">
-                              <input type="text" name="email" placeholder="Email:" id="email-input">
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-12">
-                              <textarea name="message" rows="5" placeholder="Message:" id="message-input"></textarea>
-                          </div>
-                        <div class="col-md-5"></div>
-                        <div class="mfControls col-md-4">
-                          <button type="submit" class="butn" id=form-submit>Commander</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+            <div class="container" id="audit">
+                <div class="section-heading">
+                <h3>Commandez votre Audit Gratuit</h3>
+                <p class="width-55 sm-width-75 xs-width-95">Remplissez le formulaire ci-dessous pour recevoir un audit gratuit de votre stratégie digitale sous trois jours ouvrés.</p>
                 </div>
-              </section>
-              <!-- end audit section -->
+                <div class="center-col">
+                <form method="post" action="#" class="mailform off2" id="auditForm">
+                    <input type="hidden" name="form-type" value="audit">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" name="firstname" placeholder="Prénom:" id="firstname-input">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" name="lastname" placeholder="Nom:" id="lastname-input">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" name="company" placeholder="Société:" id="company-input">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" name="phone" placeholder="Téléphone:" id="phone-input">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="email" placeholder="Email:" id="email-input">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea name="message" rows="5" placeholder="Message:" id="message-input"></textarea>
+                        </div>
+                    <div class="mfControls col-md-12 text-center">
+                        <button type="submit" class="butn" id=form-submit>Commander</button>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="container" id="auditSuccess">
+                <div class="section-heading">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-box margin-25px-bottom sm-margin-15px-bottom">
+                                <i class="far fa-check-circle text-theme-color"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Votre commande a bien été envoyée !</h3>
+                            <p>Nous reviendrons rapidement vers vous par e-mail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end audit section -->
 
         <!-- start footer section -->
         <footer class="bg-theme-light">
@@ -477,6 +491,9 @@
 
     <!-- modernizr js -->
     <script src="js/modernizr.js"></script>
+
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
 
     <!-- bootstrap -->
     <script src="js/bootstrap.min.js"></script>
