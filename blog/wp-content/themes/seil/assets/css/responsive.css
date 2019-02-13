@@ -1,0 +1,743 @@
+/* Seil Responsive CSS */
+@media screen and (max-width:1699px) {
+	/* Seil Normal CSS */
+	.container {
+		width: 970px;
+	}
+	.masonry-item {
+		width: 33.3333%;
+	}
+	/* Seil Single Post Pages CSS */
+	.seil-blog-detail, .seil-blog-detail.style-two {
+		width: auto;
+	}
+	.left-sidebar .secondary .secondary-wrap {
+		padding-right: 15px;
+	}
+	.secondary-wrap {
+		padding-left: 15px;
+	}
+	.seil-unit-fix .seil-iframe iframe {
+		height: 500px;
+	}
+	.seil-unit-fix .link-post .post-info {
+		padding: 70px 110px;
+	}
+}
+
+@media screen and (max-width:1399px) {
+	/* Seil Normal CSS */
+	.container {
+		width: 930px;
+	}
+	/* Seil Single Post Pages CSS */
+	.seil-author-info {
+		padding: 40px;
+	}
+	.seil-unit-fix .quote-post .post-info {
+		padding: 65px 100px;
+	}
+	/* Typography Page CSS */
+	.seil-elements .wp-caption-text.right {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width:1329px) {
+	/* Seil Normal CSS */
+	.container {
+		width: 750px;
+	}
+	/* Seil About Page CSS */
+	.about-wrap {
+		padding: 47px 0 0
+	}
+}
+
+@media screen and (max-width:1270px) {
+	/* Seil Normal CSS */
+	.seil-sidebar {
+		width: 260px;
+	}
+	/* Seil Home Page CSS */
+	.seil-masonry {
+		margin: 0 -10px;
+	}
+	.masonry-item {
+		width: 33.3333%;
+		padding: 0 10px 20px;
+	}
+	/* Seil Single Post Pages CSS */
+	.seil-unit-fix .quote-post .post-info {
+		padding: 55px 90px;
+	}
+	.seil-unit-fix .link-post .post-info {
+		padding: 70px;
+	}
+}
+
+@media screen and (max-width:1199px) {
+	/* Seil Home Page CSS */
+	.masonry-item {
+		width: 50%;
+		padding: 0 10px 20px;
+	}
+	/* Seil Single Post Pages CSS */
+	.secondary-wrap {
+		padding-left: 0;
+	}
+	.left-sidebar .secondary .secondary-wrap {
+		padding-right: 0;
+	}
+	/* Contact Page CSS */
+	.contact-wrap p br {
+		display: none;
+	}
+	/* Typography Page CSS */
+	.seil-elements blockquote p br {
+		display: none;
+	}
+}
+
+@media screen and (max-width:1130px) {
+	/* Seil Normal CSS */
+	.container {
+		width: 650px;
+	}
+	/* Seil About Page CSS */
+	.about-detail .about-sub-title br {
+		display: none;
+	}
+	/* 404 Error Page CSS */
+	.seil-404-error p br {
+		display: none;
+	}
+}
+
+@media screen and (max-width:1023px) {
+	/* Seil Normal CSS */
+	.container {
+		width: 670px;
+	}
+	.wp-caption-text {
+		padding-bottom: 20px;
+	}
+	.sidebar-open .seil-sidebar {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+	.sidebar-open .seil-main-wrap {
+		-webkit-transform: translateX(260px);
+		-ms-transform: translateX(260px);
+		transform: translateX(260px);
+	}
+	.seil-sidebar {
+		-webkit-transition: all 500ms ease 0s;
+		-ms-transition: all 500ms ease 0s;
+		transition: all 500ms ease 0s;
+		-webkit-transform: translateX(-260px);
+		-ms-transform: translateX(-260px);
+		transform: translateX(-260px);
+	}
+	.seil-toggle {
+		display: block;
+	}
+	.seil-toggle.active {
+		right: 0;
+	}
+	.seil-main-wrap {
+		margin-left: 0 !important;
+		-webkit-transition: all 500ms ease 0s;
+		-ms-transition: all 500ms ease 0s;
+		transition: all 500ms ease 0s;
+	}
+	/* Seil Single Post Pages CSS */
+	.seil-unit-fix .seil-iframe iframe {
+		height: 400px;
+	}
+	.seil-unit-fix .quote-post .post-info {
+		padding: 50px 90px;
+	}
+	.seil-unit-fix .link-post .post-info {
+		padding: 50px;
+	}
+}
+
+@media screen and (max-width:991px) {
+	/* Seil Normal CSS */
+	.contact-form .seil-image {
+		padding-top: 70px;
+		padding-left: 0;
+	}
+	/* Contact Page CSS */
+	.contact-form .wpcf7 {
+		padding-top: 0;
+	}
+	/* Shortcodes Page CSS */
+	.shortcodes .btn-heading {
+		margin-bottom: 15px;
+    margin-top: 30px;
+	}
+	.shortcodes .btn-group {
+		margin-bottom: 10px;
+	}
+	.shortcodes .shortcode-sub-heading {
+		padding-top: 15px;
+	}
+	.seil-widget:first-child {
+    margin-top: 13px;
+    border-top: 1px solid #ececec;
+    padding-top: 50px;
+	}
+}
+
+@media screen and (max-width:850px) {
+	/* Seil Normal CSS */
+	.container-wrap {
+		padding: 50px 0;
+	}
+	/* Shortcodes Page CSS */
+	.shortcodes .shortcode-list {
+		padding-bottom: 40px;
+	}
+	.shortcodes .shortcode-heading {
+		padding-top: 0;
+	}
+	/* 404 Error Page CSS */
+	.seil-404-error h1 {
+		font-size: 210px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	/* Seil Normal CSS */
+	form input, form textarea, form select {
+		margin-bottom: 10px;
+	}
+	table th {
+		padding: 10px;
+		font-size: 12px;
+	}
+  table td {
+  	padding: 8px 20px;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.nav-tabs > li > a {
+		padding: 10px 15px;
+	}
+	.mfp-img-mobile .mfp-image-holder {
+		padding: 15px;
+	}
+	.mfp-zoom-out-cur .mfp-close {
+		top: 30px;
+		right: 30px;
+		width: 16px;
+		height: 16px;
+		background: none;
+	}
+	.seil-logo {
+		padding-bottom: 30px;
+	}
+	.sidebar-wrap {
+		padding: 30px 30px 0;
+	}
+	.footer-wrap {
+		padding: 30px;
+	}
+	.seil-copyright {
+		margin-top: 10px;
+	}
+	.container {
+		width: auto;
+	}
+	.container-wrap {
+		padding: 40px 0 0	;
+	}
+	.main-wrap-inner {
+		padding: 25px;
+	}
+	/* Seil Home Page CSS */
+	.post-info, .post-item.post-style-two .post-info {
+		padding: 25px;
+	}
+	.quote-post .post-info, .link-post .post-info, .post-spacer-two .post-info {
+		padding: 30px;
+	}
+	.owl-drag.carousel-style-two .owl-nav {
+		left: 27px;
+	}
+	.owl-drag.carousel-style-two .slider-no-current {
+		right: 18px;
+	}
+	/* Seil Category Page CSS */
+	.posts-wrap .main-wrap-inner {
+		padding-top: 40px;
+	}
+	.category-title {
+		padding-bottom: 15px;
+	}
+	/* Seil About Page CSS */
+	.about-detail .seil-image {
+		padding-top: 10px;
+	}
+	.about-detail h2 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.about-detail h1 {
+		font-size: 24px;
+	}
+	.about-wrap {
+		padding: 20px 0 0;
+	}
+	.about-detail .about-title {
+		padding-bottom: 0;
+	}
+	.about-detail p {
+		margin-bottom: 6px;
+		line-height: 26px;
+	}
+	.follow-links {
+		padding-top: 20px;
+		margin-top: 20px;
+	}
+	.follow-links .follow-title {
+		margin-bottom: 5px;
+	}
+	.follow-links .seil-social a {
+		margin: 5px 5px 0;
+	}
+	/* Seil Single Post Pages CSS */
+	.seil-unit-fix h3.post-title {
+		font-size: 26px;
+	}
+	.seil-unit-fix .post-title-wrap {
+		padding-bottom: 10px;
+	}
+	.seil-unit-fix .link-post h5.post-link {
+		font-size: 16px;
+	}
+	.seil-blog-detail {
+		padding-top: 15px;
+	}
+	.seil-blog-detail p {
+		margin-bottom: 15px;
+		line-height: 26px;
+	}
+	.wp-caption {
+		padding: 15px 0;
+	}
+	.wp-caption-text {
+		padding-bottom: 5px;
+	}
+	.wp-caption-text strong {
+		font-size: 26px;
+	}
+	.seil-blog-detail blockquote {
+		padding: 0;
+		margin-bottom: 15px;
+	}
+	.seil-blog-detail blockquote p {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.seil-blog-meta {
+		padding: 5px 0 10px;
+	}
+	.seil-blog-share .blog-share-label {
+		padding-top: 0;
+		margin-bottom: 15px;
+	}
+	.seil-more-posts {
+		padding: 20px 0;
+	}
+	.seil-author-info {
+		padding: 15px 25px;
+	}
+	.seil-comment-form {
+		padding-bottom: 10px;
+	}
+	.seil-comment-form .comment-reply-title {
+		padding-bottom: 0;
+	}
+	.comments-section {
+		padding: 15px 0 0;
+	}
+	.seil-comments-area .comment-item {
+		padding-bottom: 15px;
+		margin-bottom: 25px;
+	}
+	.seil-comments-area .comments-title {
+		margin-bottom: 13px;
+	}
+	.seil-comments-area .comments li .children li {
+		padding-left: 0;
+	}
+	.seil-comment-form input[type="text"], .seil-comment-form input[type="email"] {
+		height: 45px;
+		margin-bottom: 15px;
+	}
+	.seil-form-textarea textarea {
+		height: 100px;
+		margin-bottom: 15px;
+	}
+	.form-submit {
+		padding-top: 5px;
+	}
+	.seil-widget {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
+	.seil-widget:first-child {
+    margin-top: 15px;
+    padding-top: 15px;
+	}
+	.widget-title {
+		margin-bottom: 15px;
+	}
+	.subscribe-form {
+		padding: 20px 25px;
+		margin: 22px 0 15px;
+	}
+	.subscribe-form input[type="email"] {
+		margin-top: 0;
+	}
+	.subscribe-form input[type="submit"] {
+		margin-top: 5px;
+	}
+	.widget-instagram .widget-title {
+		margin-bottom: 20px;
+	}
+	.seil-unit-fix .seil-iframe iframe {
+		height: 300px;
+	}
+	.seil-blog-detail u {
+		padding-top: 0;
+	}
+	.seil-blog-detail .bullets {
+		padding: 0 0 0 10px;
+		margin-bottom: 0;
+	}
+	.seil-blog-detail .bullets li {
+		font-size: 14px;
+	}
+	.seil-unit-fix .quote-post .post-info {
+		padding: 30px;
+	}
+	.seil-unit-fix .quote-post:before {
+		top: 20px;
+		left: 20px;
+		background-size: 30px auto;
+	}
+	.seil-unit-fix .quote-post:after {
+		bottom: 20px;
+		right: 20px;
+	}
+	.seil-unit-fix .quote-post .post-title blockquote p {
+		font-size: 22px;
+		line-height: normal;
+	}
+	.seil-unit-fix .quote-post .quote-owner {
+		font-size: 15px;
+	}
+	.seil-unit-fix .quote-post .quote-owner:before {
+		top: 11px;
+	}
+	.seil-unit-fix .link-post:after {
+		bottom: 10px;
+		right: 10px;
+	}
+	.seil-unit-fix .link-post .post-info {
+		padding: 30px;
+	}
+	.seil-unit-fix .link-post .post-title {
+		font-size: 22px;
+		line-height: normal;
+	}
+	/* Seil Entry Content Page CSS */
+  .entry-content dd {
+    margin-bottom: 10px;
+  }
+  .wp-caption {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .entry-content .comment-list article, .entry-content .comment-list .pingback, .entry-content .comment-list .trackback {
+    padding: 20px 0;
+  }
+  .entry-content .comment-content ul, .entry-content .comment-content ol {
+    margin: 0 0 10px 0;
+  }
+  .entry-content .comment-metadata {
+    margin-bottom: 5px;
+  }
+  .entry-content .comment-list .comment-reply-link {
+    margin-top: 0;
+  }
+  .entry-content .comment-list .children {
+    padding-left: 10px;
+  }
+  .seil-unit-fix .entry-content .comment-form {
+    padding-top: 0;
+  }
+  .seil-unit-fix .entry-content .comment-list article, .seil-unit-fix .entry-content .comment-list .pingback, .seil-unit-fix .entry-content .comment-list .trackback {
+    padding: 15px 0 20px;
+  }
+	/* Contact Page CSS */
+	.contact-wrap h1 {
+		font-size: 26px;
+	}
+	.contact-link {
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	.contact-form {
+		padding-top: 0;
+	}
+	.contact-form .seil-image {
+		padding-top: 20px;
+		padding-left: 0;
+	}
+	/* Typography Page CSS */
+	.seil-elements {
+		padding-top: 0;
+	}
+	.seil-elements .element-heading {
+		margin-bottom: 10px;
+	}
+	.seil-elements h1.element-heading {
+		font-size: 30px;
+	}
+	.seil-elements p {
+		margin-bottom: 10px;
+	}
+	.seil-elements .spacer-one {
+		margin-bottom: 10px;
+	}
+	.seil-elements .guide-heading {
+		padding-top: 0;
+		margin-bottom: 5px;
+	}
+	.seil-elements h2.guide-heading {
+		font-size: 24px;
+	}
+	.seil-elements .heading-spacer {
+		padding-top: 0;
+		margin-bottom: 10px;
+	}
+	.seil-elements h3.heading-spacer {
+		font-size: 22px;
+	}
+	.seil-elements .blockquote-spacer-one {
+		padding-top: 0;
+		padding-bottom: 10px;
+		margin: 0;
+	}
+	.seil-elements blockquote {
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	.seil-elements blockquote p {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.seil-elements .spacer-two, .seil-elements .spacer-three {
+		padding-top: 0;
+	}
+	.seil-elements ul li, .seil-elements ol li {
+		margin-bottom: 10px;
+	}
+	/* Shortcodes Page CSS */
+	.shortcodes h2.shortcode-heading {
+		font-size: 30px;
+		line-height: normal;
+	}
+	.shortcodes .shortcode-heading {
+		margin-bottom: 5px;
+	}
+	.shortcodes .sail-btn-groups, .shortcodes .btn-heading, .shortcodes .sub-spacer-three {
+		padding-top: 0;
+	}
+	.shortcodes .btn-heading, .shortcodes .btn-group:last-child {
+		margin-bottom: 15px;
+	}
+	.shortcodes .btn-heading {
+		margin: 10px 0;
+	}
+	.shortcodes .btn-group {
+		margin-bottom: 0;
+	}
+	.seil-elements .nav-tabs > li {
+		min-width: 100px;
+	}
+	.seil-elements .nav-tabs li:last-child {
+		border-right: none;
+	}
+	.tab-content {
+		padding: 15px 25px;
+	}
+	.shortcodes h3.shortcode-sub-heading {
+		font-size: 24px;
+	}
+	.shortcodes .shortcode-sub-heading {
+		padding-top: 0;
+		margin-bottom: 15px;
+	}
+	.shortcodes .shortcode-list {
+		padding-bottom: 10px;
+	}
+	.close {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.progress {
+		margin-bottom: 35px;
+	}
+	.progress .progress-counter {
+		top: -30px;
+	}
+	.panel-title {
+		font-size: 16px;
+	}
+	/* 404 Error Page CSS */
+	.seil-404-error p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.seil-404-error h1 {
+		font-size: 150px;
+		line-height: 120px;
+	}
+	.seil-404-error h2 {
+		font-size: 28px;
+	}
+	.seil-404-error .error-sub-title {
+		margin-bottom: 8px;
+	}
+	.seil-404-error .pages-link {
+		padding-top: 0;
+	}
+	.seil-404-error {
+		padding-bottom: 70px;
+	}
+	.seil-404-error .pages-link a {
+		margin: 0 10px;
+		font-size: 16px;
+	}
+	ul.page-numbers {
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width:599px) {
+	/* Seil Normal CSS */
+	.seil-navigation ul li a {
+		margin-bottom: 20px;
+	}
+	.seil-navigation .submenu {
+		padding-left: 10px;
+	}
+	.post-meta {
+		margin-bottom: 5px;
+	}
+	/* Seil Home Page CSS */
+	.seil-masonry {
+		margin: 0;
+	}
+	.masonry-item {
+		width: 100%;
+		padding: 0 0 25px;
+	}
+	.post-info h3 {
+		font-size: 20px;
+	}
+	.quote-post .post-info h3 {
+		line-height: 30px;
+	}
+	.read-more {
+		padding-top: 0;
+	}
+	/* Seil Single Post Pages CSS */
+	.seil-unit-fix h3.post-title {
+		font-size: 20px;
+	}
+	.wp-caption {
+		padding: 15px 0;
+	}
+	.wp-caption-text strong {
+		font-size: 	20px;
+	}
+	.seil-comments-area .seil-comments-meta {
+		margin-bottom: 5px;
+	}
+	.seil-comments-area .comment-item {
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+	}
+	.article-info {
+		padding-top: 10px;
+	}
+	.article-title {
+		margin-bottom: 0;
+	}
+	.seil-unit-fix .seil-iframe iframe {
+		height: 200px;
+	}
+	.seil-unit-fix .quote-post .post-title blockquote p {
+		font-size: 18px;
+	}
+	.seil-comments-area .comment-main-area {
+		padding: 10px 0 0;
+		clear: both;
+	}
+	.seil-comments-area .comment-image {
+		width: 50px;
+	}
+	.seil-comments-area .seil-comments-meta h4 {
+		font-size: 16px;
+	}
+	.seil-comments-area .seil-comments-meta .comments-date {
+		font-size: 14px;
+		line-height: normal;
+	}
+	.seil-comments-area .comment-wrapper p {
+		font-size: 14px;
+		line-height: normal;
+	}
+	.seil-unit-fix .link-post .post-info {
+		padding: 20px 30px;
+	}
+	.seil-unit-fix .link-post .post-title {
+		font-size: 18px;
+		line-height: normal;
+	}
+	/* Shortcodes Page CSS */
+	.seil-elements .nav-tabs > li {
+		width: 100%;
+		border-right: 1px solid #ececec;
+	}
+	.seil-elements .nav-tabs > li:last-child {
+		border-right: none;
+	}
+}
+
+@media screen and (max-width:479px) {
+	/* 404 Error Page CSS */
+	.seil-404-error h1 {
+		font-size: 110px;
+		line-height: 80px;
+	}
+	.seil-404-error .error-sub-title {
+		margin-bottom: 5px;
+	}
+	.seil-404-error .pages-link a:before {
+		display: table;
+		content: "";
+		clear: both;
+	}
+	.seil-404-error h2 {
+		font-size: 22px;
+	}
+}
