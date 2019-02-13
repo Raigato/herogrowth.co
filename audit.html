@@ -125,23 +125,6 @@
               <form method="post" action="#" class="mailform off2" id="auditForm">
                 <input type="hidden" name="form-type" value="audit">
                 <div class="row">
-                  <div class="col-md-4">
-                    <div class="popup error" id="firstnameError">
-                        Ne peut être vide
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="popup error" id="lastnameError">
-                        Ne peut être vide
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="popup error" id="companyError">
-                        Ne peut être vide
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
                     <div class="col-md-4">
                         <input type="text" name="firstname" placeholder="Prénom:" id="firstname-input">
                     </div>
@@ -153,18 +136,6 @@
                     </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="popup error" id="phoneError">
-                        Numero incorrect
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="popup error" id="emailError">
-                        Adresse e-mail incorrect
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
                     <div class="col-md-6">
                         <input type="text" name="phone" placeholder="Téléphone:" id="phone-input">
                     </div>
@@ -174,9 +145,6 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="popup error" id="messageError">
-                            Ne peut être vide
-                        </div>
                         <textarea name="message" rows="5" placeholder="Message:" id="message-input"></textarea>
                     </div>
                   <div class="col-md-5"></div>
@@ -277,6 +245,9 @@
 
     <!-- modernizr js -->
     <script src="js/modernizr.js"></script>
+
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
 
     <!-- bootstrap -->
     <script src="js/bootstrap.min.js"></script>

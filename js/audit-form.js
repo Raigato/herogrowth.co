@@ -1,9 +1,9 @@
-$('#firstnameError').hide()
-$('#lastnameError').hide()
-$('#companyError').hide()
-$('#phoneError').hide()
-$('#emailError').hide()
-$('#messageError').hide()
+$('#firstname-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'})
+$('#lastname-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'})
+$('#company-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'})
+$('#phone-input').popover({trigger: 'manual', title: 'Erreur', content: 'Numéro Incorrect', placement: 'left'})
+$('#email-input').popover({trigger: 'manual', title: 'Erreur', content: 'Adresse e-mail incorrect', placement: 'right'})
+$('#message-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'right'})
 
 let isHuman = false
 let firstnameValid = false
@@ -12,6 +12,13 @@ let companyValid = false
 let phoneValid = false
 let emailValid = false
 let messageValid = false
+
+let firstnameWasTouched = false
+let lastnameWasTouched = false
+let companyWasTouched = false
+let phoneWasTouched = false
+let emailWasTouched = false
+let messageWasTouched = false
 
 const isValid = () => {
   return isHuman && firstnameValid && lastnameValid && companyValid && phoneValid && emailValid && messageValid
@@ -38,30 +45,30 @@ const checkAll = () => {
 
 const check_firstname = () => {
   if ($("#firstname-input").val().length > 0) {
-    $('#firstnameError').hide()
+    $('#firstname-input').popover('hide')
     firstnameValid = true
   } else {
-    $('#firstnameError').show()
+    $('#firstname-input').popover('show')
     firstnameValid = false
   }
 }
 
 const check_lastname = () => {
   if ($("#lastname-input").val().length > 0) {
-    $('#lastnameError').hide()
+    $('#lastname-input').popover('hide')
     lastnameValid = true
   } else {
-    $('#lastnameError').show()
+    $('#lastname-input').popover('show')
     lastnameValid = false
   }
 }
 
 const check_company = () => {
   if ($("#company-input").val().length > 0) {
-    $('#companyError').hide()
+    $('#company-input').popover('hide')
     companyValid = true
   } else {
-    $('#companyError').show()
+    $('#company-input').popover('show')
     companyValid = false
   }
 }
@@ -70,10 +77,10 @@ const check_phone = () => {
   var pattern = new RegExp(/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/g)
 
   if ($("#phone-input").val().length === 0 || ($("#phone-input").val().length > 7 && pattern.test($("#phone-input").val()))) {
-    $('#phoneError').hide()
+    $('#phone-input').popover('hide')
     phoneValid = true
   } else {
-    $('#phoneError').show()
+    $('#phone-input').popover('show')
     phoneValid = false
   }
 }
@@ -82,46 +89,88 @@ const check_email = () => {
   var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i)
 
   if ($("#email-input").val().length > 7 && pattern.test($("#email-input").val())) {
-    $('#emailError').hide()
+    $('#email-input').popover('hide')
     emailValid = true
   } else {
-    $('#emailError').show()
+    $('#email-input').popover('show')
     emailValid = false
   }
 }
 
 const check_message = () => {
   if ($("#message-input").val().length > 0) {
-    $('#messageError').hide()
+    $('#message-input').popover('hide')
     messageValid = true
   } else {
-    $('#messageError').show()
+    $('#message-input').popover('show')
     messageValid = false
   }
 }
 
 $("#firstname-input").focusout(() => {
   check_firstname()
+  firstnameWasTouched = true
 })
 
 $("#lastname-input").focusout(() => {
   check_lastname()
+  lastnameWasTouched = true
 })
 
 $("#company-input").focusout(() => {
   check_company()
+  companyWasTouched = true
 })
 
 $("#phone-input").focusout(() => {
   check_phone()
+  phoneWasTouched = true
 })
 
 $("#email-input").focusout(() => {
   check_email()
+  emailWasTouched = true
 })
 
 $("#message-input").focusout(() => {
   check_message()
+  messageWasTouched = true
+})
+
+$("#firstname-input").keyup(() => {
+  if (firstnameWasTouched) {
+    check_firstname()
+  }
+})
+
+$("#lastname-input").keyup(() => {
+  if (lastnameWasTouched) {
+    check_lastname()
+  }
+})
+
+$("#company-input").keyup(() => {
+  if (companyWasTouched) {
+    check_company()
+  }
+})
+
+$("#phone-input").keyup(() => {
+  if (phoneWasTouched) {
+    check_phone()
+  }
+})
+
+$("#email-input").keyup(() => {
+  if (emailWasTouched) {
+    check_email()
+  }
+})
+
+$("#message-input").keyup(() => {
+  if (messageWasTouched) {
+    check_message()
+  }
 })
 
 // Wait for a mouse to move, indicating they are human.
