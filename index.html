@@ -544,8 +544,17 @@
 
     <script>
         $('.auditBtn').click(() => {
+
+            const getOffset = () => {
+                if ($("#audit").is(":visible")) {
+                    return $("#audit").offset().top - 130
+                } else {
+                    return $("#auditSuccess").offset().top - 200
+                }
+            }
+
             $('html,body').animate({
-                scrollTop: $("#audit").offset().top - 130
+                scrollTop: getOffset()
             }, 'slow')
         })
 
