@@ -100,7 +100,7 @@
                             </ul>
 
                             <div class="margin-20px-left sm-display-none">
-                                <a class="butn auditBtn" href="audit">Audit Gratuit</a>
+                                <a class="butn scrollTop" href="javascript:void(0)">Audit Gratuit</a>
                             </div>
 
                         </div>
@@ -316,10 +316,18 @@
 
     <script src="js/audit-form.js"></script>
     <script>
-        $('.scrollTop').click(() => {
+        $('.scrollTop').click((e) => {
+            const getOffset = () => {
+                if ($("#audit").is(":visible")) {
+                    return $("#audit").offset().top - 100
+                } else {
+                    return $("#auditSuccess").offset().top - 100
+                }
+            }
+
             $('html,body').animate({
-                scrollTop: $("#audit").offset().top - 80
-            }, "slow")
+                scrollTop: getOffset()
+            }, 'slow')
         })
     </script>
 
