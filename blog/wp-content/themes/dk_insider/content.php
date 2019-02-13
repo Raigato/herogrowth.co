@@ -6,7 +6,7 @@
 		<!-- Social bar ___-->
 		<div class="social-bar">
 			<div class="youre-reading">
-				<strong><?php esc_html_e('You are reading', 'dk_insider'); ?></strong>
+				<strong><?php esc_html_e('Vous lisez', 'dk_insider'); ?></strong>
 				<h2><?php echo esc_attr( substr(get_the_title(), 0, 40)); ?>
 				<?php if ( strlen( get_the_title() ) > 40 ) { echo "..." ;}; ?></h2>
 			</div>
@@ -68,9 +68,9 @@
 	
 	<div id="more-excerpts">	
 		<?php if ( get_post_type() == 'tribe_events' ): ?>
-		<h2><?php esc_html_e('More Events for You', 'dk_insider'); ?></h2>
+		<h2><?php esc_html_e('D\'autres Événements pour Vous', 'dk_insider'); ?></h2>
 		<?php else : ?>
-		<h2><?php esc_html_e('More Articles for You', 'dk_insider'); ?></h2>
+		<h2><?php esc_html_e('D\'autres Articles pour Vous', 'dk_insider'); ?></h2>
 		<?php endif; ?>
 		<div class="excerpts">
 		<?php

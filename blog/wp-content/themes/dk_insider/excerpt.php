@@ -32,7 +32,7 @@
 				<?php the_time(get_option( 'date_format' )) ?></span> 
 				<a href="<?php the_permalink(); ?>" class="entry-read-time">
 					<span>&nbsp; &bull; &nbsp;</span>
-					<?php echo insider_estimated_reading_time() . ' ' . esc_html('read', 'dk_insider'); ?>
+					<?php echo insider_estimated_reading_time() . ' ' . esc_html(' de lecture', 'dk_insider'); ?>
 				</a>
 				<?php endif; ?>
 			</div>

@@ -122,7 +122,7 @@
 <?php if ( $e_query->have_posts() ): ?>
 
 <div class="excerpts four-in-row">
-	<h2 class="uppercase"><?php esc_html_e('Upcoming Events', 'dk_insider'); ?></h2>
+	<h2 class="uppercase"><?php esc_html_e('Événements à Venir', 'dk_insider'); ?></h2>
 	<?php while ( $e_query->have_posts() ) : 
 		$e_query->the_post(); 
 		get_template_part('excerpt'); // excerpt.php ?>
@@ -167,6 +167,6 @@
 
 <?php $already_displayed = implode(",", $already_displayed); ?>
 	
-<div id="load-more" data-load_page="<?php echo intval($paged+1); ?>" data-until="<?php echo intval($c_query->max_num_pages); ?>" data-already_displayed="<?php echo esc_attr($already_displayed); ?>"><?php echo get_next_posts_link( esc_html('Load More Articles','dk_insider'), $c_query->max_num_pages ); ?></div>
+<div id="load-more" data-load_page="<?php echo intval($paged+1); ?>" data-until="<?php echo intval($c_query->max_num_pages); ?>" data-already_displayed="<?php echo esc_attr($already_displayed); ?>"><?php echo get_next_posts_link( esc_html('Charger Plus d\'Articles','dk_insider'), $c_query->max_num_pages ); ?></div>
 	
 <?php wp_reset_postdata(); ?>
