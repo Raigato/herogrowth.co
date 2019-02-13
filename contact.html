@@ -125,23 +125,23 @@
                             <p class="width-55 sm-width-75 xs-width-95">Vous avez une question ? Vous souhaitez nous rencontrer ? Rien de plus simple ! Vous pouvez nous envoyer un message avec le formulaire ci-dessous !</p>
                         </div>
 
-                        <form method="post" action="bat/rd-mailform.php" class="mailform off2">
+                        <form method="POST" action="https://hooks.zapier.com/hooks/catch/4501492/p34aq4/" class="mailform off2" id="contactForm">
                             <input type="hidden" name="form-type" value="contact">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <input type="text" name="name" placeholder="Votre nom:" data-constraints="@LettersOnly @NotEmpty">
+                                    <input type="text" name="name" placeholder="Votre nom:">
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="text" name="phone" placeholder="Téléphone:" data-constraints="@Phone">
+                                    <input type="text" name="phone" placeholder="Téléphone:">
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
+                                    <input type="text" name="email" placeholder="Email:">
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea name="message" rows="5" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
+                                    <textarea name="message" rows="5" placeholder="Message:"></textarea>
                                 </div>
                                 <div class="mfControls col-md-12">
-                                    <button type="submit" class="butn">Envoyer</button>
+                                    <button type="submit" class="butn" id=form-submit>Envoyer</button>
                                 </div>
                             </div>
                         </form>
@@ -279,18 +279,27 @@
     <!-- wow js -->
     <script src="js/wow.js"></script>
 
-    <!-- map js -->
-    <script src="js/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJScy7qJ156DWM8kJVG-ZrK0R7Kize2Jg&amp;callback=initMap" async defer></script>
-
     <!-- custom scripts -->
     <script src="js/main.js"></script>
 
-    <!-- contact form scripts -->
-    <script src="js/mailform/jquery.form.min.js"></script>
-    <script src="js/mailform/jquery.rd-mailform.min.c.js"></script>
-
     <!-- all js include end -->
+    
+    <!-- Contact form logic -->
+    <script>
+        // POST form data to zapier on submit
+        $('#contactForm').submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                url:'https://hooks.zapier.com/hooks/catch/4501492/p34aq4/',
+                type:'post',
+                data:$('#contactForm').serialize(),
+                success:function(){
+                // Redirect to another success page
+                window.location = "contact.html";
+                }
+            });
+        });
+    </script>
 
 </body>
 
