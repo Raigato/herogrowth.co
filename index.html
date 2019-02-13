@@ -347,45 +347,80 @@
         <!-- end testmonials section -->
 
         <!-- start audit section -->
-        <section>
-            <div class="container" id="audit">
-                <div class="section-heading">
+        <section class="bg-theme-light">
+                <div class="container" id="audit">
+                  <div class="section-heading">
                     <h3>Commandez votre Audit Gratuit</h3>
-                    <p class="width-55 sm-width-75 xs-width-95">Remplissez le formulaire ci-dessous pour recevoir un audit gratuit de votre stratégie digitale sous trois jours ouvrés.</p>    
-                </div>
-                <div class="center-col">
-                    <form method="post" action="bat/rd-mailform.php" class="mailform off2">
-                        <input type="hidden" name="form-type" value="contact">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <input type="text" name="name" placeholder="Prénom:">
-                            </div>
-                            <div class="col-md-4">
-                                <input type="text" name="name" placeholder="Nom:">
-                            </div>
-                            <div class="col-md-4">
-                                <input type="text" name="name" placeholder="Société:">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="phone" placeholder="Téléphone:">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="email" placeholder="Email:">
-                            </div>
-                            <div class="col-md-12">
-                                <textarea name="message" rows="5" placeholder="Message:"></textarea>
-                            </div>
-                            <div class="col-md-5"></div>
-                            <div class="mfControls col-md-4">
-                                <button type="submit" class="butn">Envoyer</button>
-                            </div>
+                    <p class="width-55 sm-width-75 xs-width-95">Remplissez le formulaire ci-dessous pour recevoir un audit gratuit de votre stratégie digitale sous trois jours ouvrés.</p>
+                  </div>
+                  <div class="center-col">
+                    <form method="post" action="#" class="mailform off2" id="auditForm">
+                      <input type="hidden" name="form-type" value="audit">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="popup error" id="firstnameError">
+                              Ne peut être vide
+                          </div>
                         </div>
+                        <div class="col-md-4">
+                          <div class="popup error" id="lastnameError">
+                              Ne peut être vide
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="popup error" id="companyError">
+                              Ne peut être vide
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-4">
+                              <input type="text" name="firstname" placeholder="Prénom:" id="firstname-input">
+                          </div>
+                          <div class="col-md-4">
+                              <input type="text" name="lastname" placeholder="Nom:" id="lastname-input">
+                          </div>
+                          <div class="col-md-4">
+                              <input type="text" name="company" placeholder="Société:" id="company-input">
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="popup error" id="phoneError">
+                              Numero incorrect
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="popup error" id="emailError">
+                              Adresse e-mail incorrect
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <input type="text" name="phone" placeholder="Téléphone:" id="phone-input">
+                          </div>
+                          <div class="col-md-6">
+                              <input type="text" name="email" placeholder="Email:" id="email-input">
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="popup error" id="messageError">
+                                  Ne peut être vide
+                              </div>
+                              <textarea name="message" rows="5" placeholder="Message:" id="message-input"></textarea>
+                          </div>
+                        <div class="col-md-5"></div>
+                        <div class="mfControls col-md-4">
+                          <button type="submit" class="butn" id=form-submit>Commander</button>
+                        </div>
+                      </div>
                     </form>
+                  </div>
                 </div>
-
-            </div>
-        </section>
-        <!-- end audit section -->
+              </section>
+              <!-- end audit section -->
 
         <!-- start footer section -->
         <footer class="bg-theme-light">
@@ -514,15 +549,14 @@
     <!-- wow js -->
     <script src="js/wow.js"></script>
 
-    <!-- map js -->
-    <script src="js/map.js"></script>
-
     <!-- custom scripts -->
     <script src="js/main.js"></script>
 
     <!-- contact form scripts -->
 
     <!-- all js include end -->
+    <script src="js/audit-form.js"></script>
+
     <script>
         $('.auditBtn').click(() => {
             $('html,body').animate({
