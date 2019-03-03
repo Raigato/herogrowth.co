@@ -1,6 +1,16 @@
 User-agent: *
 
-Noindex: /
-Disallow: /
+Noindex: /our-team
+Noindex: /projects
+Noindex: /single-project
+Noindex: /kebab
+Noindex: /coming-soon
+Noindex: /404-page
+Disallow: /404-page
+Disallow: /coming-soon
+Disallow: /kebab
+Disallow: /single-project
+Disallow: /projects
+Disallow: /our-team
 
 Sitemap: https://www.herogrowth.co/sitemap.xml
