@@ -16,7 +16,7 @@
                 //active_content_border_color: '#c1c1c1',
                 activate: function () {
                 }
-            }
+            };
             //Variables
             var options = $.extend(defaults, options);
             var opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical', accord = 'accordion';
