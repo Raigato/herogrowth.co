@@ -724,6 +724,7 @@ a.butn.white:hover, a.butn.white:active {
         vertical-align: middle;
         color: #fff;
         font-family: Font Awesome\ 5 Free;
+font-display: swap;
         padding: 0 5px 0 10px; }
       .page-title-section ul li:last-child:after {
         content: none; }
@@ -2310,6 +2311,7 @@ h3.footer-title-style {
         font-weight: 700;
         vertical-align: bottom;
         font-family: Font Awesome\ 5 Free;
+font-display: swap;
         color: #232323;
         padding-right: 8px;
         -webkit-transition-duration: .3s;
