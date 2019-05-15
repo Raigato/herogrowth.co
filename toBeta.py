@@ -19,7 +19,7 @@ def uploadFile(filename):
   try:
     ftp.login(username, password)
 
-    ftp.cwd("www")
+    ftp.cwd("www/preprod")
 
     print("Uploading %s" % filename)
     with open(filename, 'rb') as f_in:
@@ -41,7 +41,7 @@ def uploadLight():
   try:
     ftp.login(username, password)
 
-    ftp.cwd("www")
+    ftp.cwd("www/preprod")
 
     for fileToUpload in filesToUpload:
       print("Uploading %s" % fileToUpload)
