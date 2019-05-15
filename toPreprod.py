@@ -11,10 +11,10 @@ def help():
 
 def uploadFile(filename):
   ftp = ftplib.FTP()
-  host = "ftp.cluster026.hosting.ovh.net"
+  host = "ftp.cluster027.hosting.ovh.net"
   port = 21
-  username = "opisuiterc"
-  password = "QgD9kKId043pdvYw"
+  username = "herogrowns"
+  password = "dU4Gn4e7uzpA8YGa"
   ftp.connect(host, port)
   try:
     ftp.login(username, password)
@@ -33,10 +33,10 @@ def uploadLight():
   filesToUpload = ["404-page.html", "qui-sommes-nous.html", "audit.html", "contact.html", "index.html", "kebab.html", "services.html", "mentions-legales.html"]
 
   ftp = ftplib.FTP()
-  host = "ftp.cluster026.hosting.ovh.net"
+  host = "ftp.cluster027.hosting.ovh.net"
   port = 21
-  username = "opisuiterc"
-  password = "QgD9kKId043pdvYw"
+  username = "herogrowns"
+  password = "dU4Gn4e7uzpA8YGa"
   ftp.connect(host, port)
   try:
     ftp.login(username, password)
