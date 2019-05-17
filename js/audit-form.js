@@ -1,11 +1,22 @@
 $('#auditSuccess').hide();
 
-$('#firstname-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'});
-$('#lastname-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'});
-$('#company-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'});
-$('#phone-input').popover({trigger: 'manual', title: 'Erreur', content: 'Numéro Incorrect', placement: 'left'});
-$('#email-input').popover({trigger: 'manual', title: 'Erreur', content: 'Adresse e-mail incorrect', placement: 'right'});
-$('#message-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'right'});
+let lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+
+if (lang == "fr") {
+  $('#firstname-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'});
+  $('#lastname-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'});
+  $('#company-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'top'});
+  $('#phone-input').popover({trigger: 'manual', title: 'Erreur', content: 'Numéro Incorrect', placement: 'left'});
+  $('#email-input').popover({trigger: 'manual', title: 'Erreur', content: 'Adresse e-mail incorrect', placement: 'right'});
+  $('#message-input').popover({trigger: 'manual', title: 'Erreur', content: 'Ce champ ne peut être vide', placement: 'right'});
+} else {
+  $('#firstname-input').popover({trigger: 'manual', title: 'Error', content: 'This field cannot be empty', placement: 'top'});
+  $('#lastname-input').popover({trigger: 'manual', title: 'Error', content: 'This field cannot be empty', placement: 'top'});
+  $('#company-input').popover({trigger: 'manual', title: 'Error', content: 'This field cannot be empty', placement: 'top'});
+  $('#phone-input').popover({trigger: 'manual', title: 'Error', content: 'Invalid number', placement: 'left'});
+  $('#email-input').popover({trigger: 'manual', title: 'Error', content: 'Invalid email address', placement: 'right'});
+  $('#message-input').popover({trigger: 'manual', title: 'Error', content: 'This field cannot be empty', placement: 'right'});
+};
 
 let isHuman = false;
 let firstnameValid = false;
