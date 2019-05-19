@@ -755,9 +755,12 @@ a.butn.white:hover, a.butn.white:active {
     Feature boxes
 ====================================== */
 .partner-box {
-  border: 1px solid #ececec; }
+  height: 300px;
+}
   .partner-box img {
-    width: 100%; }
+    width: 60%;
+    margin-left: 30%;
+    border-radius: 150px; }
 
 .partner-text {
   padding: 25px 40px 25px 0; }
@@ -789,6 +792,11 @@ a.butn.white:hover, a.butn.white:active {
 
 .partner-box:hover .partner-text h4:after {
   width: 80px; }
+
+.partner-social {
+  margin-top: 25px;
+  margin-left: 30%;
+}
 
 @media screen and (max-width: 767px) {
   .partner-text {
