@@ -34,3 +34,6 @@
 
 /* == contact form classes == */
 @import url("plugins/mailform.css");
+
+/* == twententy == */
+@import url("plugins/twentytwenty.css");
