@@ -30,6 +30,7 @@
 
     <!-- plugins -->
     <link rel="stylesheet" href="css/plugins.min.css" />
+    <link rel="stylesheet" href="css/plugins/twentytwenty.css" media="screen" />
 
     <!-- core style css -->
     <link href="css/styles.min.css" rel="stylesheet" id="colors" />
@@ -236,15 +237,40 @@
         </section> -->
         <!-- end counter section -->
 
-        <!-- start team section -->
+        <!-- start comparison section -->
         <section>
             <div class="container">
+                <div class="section-heading">
+                    <h3>We Focus On Results</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <h4>Kick-off</h4>
+                        <p>Together with our client, we outlined their goals and how to achieve them. We then deployed the best tactics for rapid growth.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div id="comparison-container" class="twentytwenty-container">
+                            <img src="img/comparison/client-ga-june.png" alt="">
+                            <img src="img/comparison/client-ga-sept.png" alt="">
+                        </div>
+                        <p class="text-center alt-font text-light-gray margin-10px-top">SLIDE ME TO SEE THE IMPACT RIGHT HOOK DIGITAL MAKES</p>
+                    </div>
+                    <div class="col-lg-3 col-md-12 text-right">
+                        <h4>Growth & Scale</h4>
+                        <p>By focussing on high ROI channels and through continuous testing & optimizing, we increased monthly revenue by 507% and lifted conversion rates by 39% within 90 days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end comparison section-->
 
+        <!-- start team section -->
+        <!-- <section class="bg-light-gray">
+            <div class="container">
                 <div class="section-heading">
                     <h3>Notre Team</h3>
                     <a href="javascript:void(0)" class="butn margin-10px-top">Rejoignez nous</a>
                 </div>
-
                 <div class="row">
                     <div class="col-lg-6 col-md-12 sm-margin-20px-bottom">
                         <div class="partner-box bg-white">
@@ -289,7 +315,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- end team section -->
 
         <!-- start footer section -->
@@ -420,7 +446,18 @@
     <!-- custom scripts -->
     <script src="js/main.min.js"></script>
 
+    <!-- jquery even move -->
+    <script src="js/jquery.event.move.js"></script>
+
+    <!-- twentytwenty -->
+    <script src="js/jquery.twentytwenty.js"></script>
+
     <!-- all js include end -->
+    <script>
+        $(window).load(function() {
+            $("#comparison-container").twentytwenty({no_overlay: true});
+        });
+    </script>
 
 </body>
 
