@@ -1249,7 +1249,6 @@ a.butn.white:hover, a.butn.white:active {
     padding-right: 10px; }
 
 .project-single-info {
-  border: 1px solid #ececec;
   display: block;
   width: 100%;
   padding: 0 20px; }
@@ -1257,22 +1256,25 @@ a.butn.white:hover, a.butn.white:active {
     color: #777;
     font-size: 15px;
     font-weight: 500;
-    border-bottom: 1px solid #ececec;
     padding: 12px 0; }
     .project-single-info ul li:last-child {
       border-bottom: none; }
     .project-single-info ul li span {
       display: inline-block;
-      color: #232323;
-      font-size: 15px;
-      font-weight: 500;
+      color: #4e54c8;
+      font-size: 45px;
+      font-weight: 700;
       margin-right: 25px;
       width: 70px;
       max-width: 100%; }
     .project-single-info ul li .value {
+      border: none;
       width: auto;
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 15px;
       margin-right: 0;
-      color: #6f6f6f; }
+      color: black; }
 
 .project-single-img {
   padding-bottom: 30px; }
