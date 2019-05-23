@@ -30,7 +30,7 @@ def uploadFile(filename):
     print("Failed to connect to FTP")
 
 def uploadLight():
-  filesToUpload = ["case-studies.html", "404-page.html", "what-we-do.html", "meet-the-team.html", "index.html", "kebab.html"]
+  filesToUpload = ["case-studies.html", "404-page.html", "what-we-do.html", "meet-the-team.html", "index.html", "kebab.html", "strategy-call.html"]
 
   ftp = ftplib.FTP()
   host = "ftp.cluster027.hosting.ovh.net"
