@@ -4,6 +4,7 @@ Noindex: /our-team
 Noindex: /projects
 Noindex: /single-project
 Noindex: /kebab
+Noindex: /mcdonalds
 Noindex: /coming-soon
 Noindex: /404-page
 Disallow: /404-page
